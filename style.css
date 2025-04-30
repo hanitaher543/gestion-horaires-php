@@ -1,106 +1,138 @@
-/* Style global */
+/* ===================
+   1. Style général
+==================== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif; /* Police générale */
+    background-color: #f4f4f9; /* Couleur de fond claire */
+    color: #333; /* Couleur du texte */
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
-/* Header */
-h2 {
-    text-align: center;
-    color: #333;
-    padding: 20px 0;
+/* ===================
+   2. Conteneur principal
+==================== */
+.container {
+    max-width: 960px; /* Limite la largeur du conteneur */
+    margin: 50px auto; /* Centrer le conteneur horizontalement avec un espacement */
+    background-color: #fff; /* Fond blanc */
+    padding: 40px; /* Espacement intérieur */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet d'élévation */
 }
 
-/* Formulaire principal */
-form {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-label {
+/* ===================
+   3. Titres
+==================== */
+h1, h2, h3 {
+    color: #333; /* Couleur du texte des titres */
+    text-align: center; /* Centrer les titres */
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 25px; /* Espacement sous les titres */
+}
+
+/* ===================
+   4. Menu de navigation
+==================== */
+.menu {
+    list-style-type: none; /* Enlever les puces de la liste */
+    padding: 0; /* Retirer le padding par défaut de la liste */
+    text-align: center; /* Centrer le menu */
+}
+
+.menu li {
+    margin-bottom: 15px; /* Espacement entre les éléments du menu */
+}
+
+.menu a {
     display: block;
+    background-color: #007bff; /* Couleur de fond bleu */
+    color: white; /* Couleur du texte en blanc */
+    padding: 15px 20px; /* Espacement intérieur du lien */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Retirer le soulignement */
+    transition: background-color 0.3s ease; /* Transition pour un effet de survol */
 }
 
-input[type="text"], input[type="number"], input[type="email"], select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+.menu a:hover {
+    background-color: #0056b3; /* Couleur au survol (lorsqu'on passe la souris) */
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+/* ===================
+   5. Formulaires
+==================== */
+form {
+    display: flex;
+    flex-direction: column; /* Aligner les champs du formulaire verticalement */
+    gap: 15px; /* Espacement entre les éléments du formulaire */
+    align-items: center; /* Centrer les champs */
 }
 
-button:hover {
-    background-color: #45a049;
+input[type="text"],
+input[type="number"],
+select {
+    padding: 12px; /* Espacement à l'intérieur des champs */
+    border: 1px solid #ccc; /* Bordure fine */
+    border-radius: 8px; /* Coins arrondis */
+    width: 100%; /* Largeur de 100% pour remplir l'espace */
+    max-width: 400px; /* Limiter la largeur à 400px */
 }
 
-/* Tableau des horaires */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* ===================
+   6. Boutons
+==================== */
+input[type="submit"] {
+    background-color: #28a745; /* Couleur du bouton vert */
+    color: white; /* Texte blanc */
+    padding: 12px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: background-color 0.3s ease; /* Transition lors du survol */
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+input[type="submit"]:hover {
+    background-color: #218838; /* Couleur du bouton au survol */
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
+/* ===================
+   7. Liens et boutons de retour
+==================== */
+a.button-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #6c757d; /* Couleur de fond grise */
+    color: white; /* Texte blanc */
+    text-decoration: none; /* Retirer le soulignement */
+    border-radius: 6px; /* Coins arrondis */
+    margin-top: 20px; /* Espacement au-dessus */
 }
 
-th {
-    background-color: #f2f2f2;
-    color: #333;
+a.button-link:hover {
+    background-color: #5a6268; /* Couleur de fond grise foncée au survol */
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+/* ===================
+   8. Liste des horaires (affichage des horaires)
+==================== */
+h3 {
+    color: #333; /* Couleur des titres h3 */
+    margin-top: 20px; /* Espacement au-dessus du titre */
 }
 
-/* Style des messages de confirmation */
-p {
-    font-size: 16px;
-    color: #28a745;
-    text-align: center;
+h4 {
+    margin: 10px 0; /* Espacement pour les sous-titres */
 }
 
-/* Messages d'erreur */
-.error {
-    font-size: 16px;
-    color: #dc3545;
-    text-align: center;
+/* ===================
+   9. Général pour les éléments de retour
+==================== */
+a {
+    color: #007bff; /* Couleur des liens */
+    text-decoration: none; /* Retirer le soulignement */
 }
 
-/* Styles pour les champs spécifiques */
-input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, select:focus {
-    border-color: #4CAF50;
+a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
 }
 
-/* Styles pour les boutons */
-button[type="submit"] {
-    width: 100%;
-    font-size: 18px;
-}
