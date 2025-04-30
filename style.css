@@ -1,0 +1,106 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+}
+
+/* Formulaire principal */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tableau des horaires */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style des messages de confirmation */
+p {
+    font-size: 16px;
+    color: #28a745;
+    text-align: center;
+}
+
+/* Messages d'erreur */
+.error {
+    font-size: 16px;
+    color: #dc3545;
+    text-align: center;
+}
+
+/* Styles pour les champs spécifiques */
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, select:focus {
+    border-color: #4CAF50;
+}
+
+/* Styles pour les boutons */
+button[type="submit"] {
+    width: 100%;
+    font-size: 18px;
+}
