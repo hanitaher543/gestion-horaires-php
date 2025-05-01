@@ -31,13 +31,13 @@ class Horaire {
     }
 
     public function afficher_horaires($nom) {
-        $req = "SELECT jour, heures FROM horaire WHERE nom = :nom";
+        $req = "SELECT id, nom, jour, heures FROM horaire WHERE nom = :nom";
         $res = $this->conn->prepare($req);
         //Bech te9ra el valeur
         $res->bindValue(":nom", $nom);
         // Pour excuter la réquette 
         $res->execute();
-        return $res; // On récupère les résultats dans index.php
+        return $res; 
     }
 
     public function total_heures($nom) {
